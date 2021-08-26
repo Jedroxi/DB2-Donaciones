@@ -6,6 +6,7 @@
 package Ventanas;
 
 import Clases.SQLClass;
+import java.awt.GridBagConstraints;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -17,15 +18,19 @@ import javax.swing.JOptionPane;
  *
  * @author crixa
  */
-public class RegistroInstitucion extends javax.swing.JPanel {
+public class RegistroDonacion extends javax.swing.JPanel {
 
     /**
      * Creates new form RegistroDonante
      */
-    public RegistroInstitucion(javax.swing.JPanel miRef) {
+    public RegistroDonacion(javax.swing.JPanel miRef) {
         this.refHome = miRef;
         initComponents();
         jLabel10.setVisible(false);
+        gridConstraints.gridwidth = 1;
+        gridConstraints.weightx = 1;
+        gridConstraints.weighty = 1;
+        gridConstraints.gridx = 0;
     }
 
     /**
@@ -40,14 +45,17 @@ public class RegistroInstitucion extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         btnRegistrar = new javax.swing.JButton();
         btnHome = new javax.swing.JButton();
-        campoNombre = new javax.swing.JTextField();
-        campoDireccion = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jLabel7 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(1020, 510));
@@ -56,7 +64,7 @@ public class RegistroInstitucion extends javax.swing.JPanel {
 
         jLabel2.setFont(new java.awt.Font("Bahnschrift", 0, 49)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Registrar Institución");
+        jLabel2.setText("Registrar Donacion");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 25, -1, -1));
 
         btnRegistrar.setBackground(new java.awt.Color(102, 102, 0));
@@ -80,7 +88,7 @@ public class RegistroInstitucion extends javax.swing.JPanel {
                 btnRegistrarMouseExited(evt);
             }
         });
-        add(btnRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 140, 40));
+        add(btnRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 450, 140, 40));
 
         btnHome.setFont(new java.awt.Font("Bahnschrift", 0, 14)); // NOI18N
         btnHome.setForeground(new java.awt.Color(255, 255, 255));
@@ -98,42 +106,56 @@ public class RegistroInstitucion extends javax.swing.JPanel {
         });
         add(btnHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
-        campoNombre.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        campoNombre.setToolTipText("");
-        campoNombre.setMinimumSize(new java.awt.Dimension(300, 30));
-        campoNombre.setPreferredSize(new java.awt.Dimension(300, 30));
-        add(campoNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, -1, -1));
-        campoNombre.getAccessibleContext().setAccessibleName("");
-
-        campoDireccion.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        campoDireccion.setToolTipText("");
-        campoDireccion.setMinimumSize(new java.awt.Dimension(300, 30));
-        campoDireccion.setPreferredSize(new java.awt.Dimension(300, 30));
-        add(campoDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, -1, -1));
-
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Generales/barraNavRegistros.png"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Bahnschrift", 0, 15)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Bahnschrift", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel6.setText("Agregue los datos del nuevo donante");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
+        jLabel6.setText("Productos");
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Bahnschrift", 0, 19)); // NOI18N
-        jLabel3.setText("Nombre:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, -1, -1));
+        jLabel3.setText("Donante:");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Bahnschrift", 0, 19)); // NOI18N
-        jLabel4.setText("Dirección:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, -1, -1));
+        jLabel4.setText("Institución:");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, -1, -1));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Institucion/logoInstitucion.png"))); // NOI18N
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 150, -1, -1));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Donaciones/producto.png"))); // NOI18N
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 300, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Bahnschrift", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 153, 0));
-        jLabel10.setText("Registro Exitoso");
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 430, 190, 30));
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setText("<html>Registro<br>Exitoso</html>");
+        jLabel10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 360, 110, 60));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, 190, 30));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, 190, 30));
+
+        jLabel7.setFont(new java.awt.Font("Bahnschrift", 1, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel7.setText("Principal");
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
+
+        jPanel1.setMaximumSize(new java.awt.Dimension(460, 250));
+        jPanel1.setMinimumSize(new java.awt.Dimension(460, 250));
+        jPanel1.setPreferredSize(new java.awt.Dimension(460, 250));
+        jPanel1.setLayout(new java.awt.GridBagLayout());
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 170, 460, 250));
+
+        jButton1.setText("jButton1");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 130, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseClicked
@@ -155,44 +177,35 @@ public class RegistroInstitucion extends javax.swing.JPanel {
 
     private void btnRegistrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistrarMouseClicked
         // TODO add your handling code here:
-        String nombre = campoNombre.getText();
-        String direccion = campoDireccion.getText();
         
-        if (!nombre.equals("") && !direccion.equals("")) {
-            String msj = SQLClass.agregarInstitucion(nombre, direccion);
-            if (!msj.equals("")) {
-                JOptionPane.showMessageDialog(this, msj, "Error", JOptionPane.WARNING_MESSAGE);
-            } else {
-                jLabel10.setVisible(true);
-                Timer timer = new Timer();
-                TimerTask task = new TimerTask() {
-                    public void run() {
-                        jLabel10.setVisible(false);
-                        timer.cancel();
-                    }
-                };
-                timer.scheduleAtFixedRate(task, 2000, 1000);
-            }
-        } else {
-            JOptionPane.showMessageDialog(this, "Algún campo esta vacío", "Error", JOptionPane.WARNING_MESSAGE);
-        }
 
 
     }//GEN-LAST:event_btnRegistrarMouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        // TODO add your handling code here:
+        gridConstraints.gridy = contGridY++;
+        jPanel1.add(new Producto2(this),gridConstraints);
+    }//GEN-LAST:event_jButton1MouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnHome;
     private javax.swing.JButton btnRegistrar;
-    private javax.swing.JTextField campoDireccion;
-    private javax.swing.JTextField campoNombre;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
     private javax.swing.JPanel refHome;
+    private GridBagConstraints gridConstraints = new GridBagConstraints();
+    private int contGridY = 0;
 }

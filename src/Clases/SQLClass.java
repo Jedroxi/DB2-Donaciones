@@ -107,7 +107,7 @@ public class SQLClass {
             
             CallableStatement cs = null;
             
-            cs = connection.prepareCall("{call agregarInstitucion(?,?,?,?,?)}");
+            cs = connection.prepareCall("{call agregarInstitucion(?,?)}");
             cs.setString(1,nombre);
             cs.setString(2,direccion);
             cs.execute();

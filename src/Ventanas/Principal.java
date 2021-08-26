@@ -5,6 +5,8 @@
  */
 package Ventanas;
 
+import javax.swing.JPanel;
+
 /**
  *
  * @author crixa
@@ -31,9 +33,9 @@ public class Principal extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         logoSM = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnRegistrarDonante = new javax.swing.JButton();
+        btnRegistrarInstitucion = new javax.swing.JButton();
+        btnRegistrarDonaciones = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -54,62 +56,65 @@ public class Principal extends javax.swing.JFrame {
         logoSM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Home/logosm.png"))); // NOI18N
         jPanel2.add(logoSM, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 190, 220));
 
-        jButton1.setBackground(new java.awt.Color(255, 0, 51,0));
-        jButton1.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Registrar Donante");
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnRegistrarDonante.setBackground(new java.awt.Color(255, 0, 51,0));
+        btnRegistrarDonante.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
+        btnRegistrarDonante.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegistrarDonante.setText("Registrar Donante");
+        btnRegistrarDonante.setBorderPainted(false);
+        btnRegistrarDonante.setContentAreaFilled(false);
+        btnRegistrarDonante.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnRegistrarDonante.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
+                btnRegistrarDonanteMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton1MouseEntered(evt);
+                btnRegistrarDonanteMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton1MouseExited(evt);
+                btnRegistrarDonanteMouseExited(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+        jPanel2.add(btnRegistrarDonante, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
 
-        jButton2.setBackground(new java.awt.Color(255, 0, 51,0));
-        jButton2.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Registrar Instituciones");
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnRegistrarInstitucion.setBackground(new java.awt.Color(255, 0, 51,0));
+        btnRegistrarInstitucion.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
+        btnRegistrarInstitucion.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegistrarInstitucion.setText("Registrar Instituciones");
+        btnRegistrarInstitucion.setBorderPainted(false);
+        btnRegistrarInstitucion.setContentAreaFilled(false);
+        btnRegistrarInstitucion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnRegistrarInstitucion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton2MouseClicked(evt);
+                btnRegistrarInstitucionMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton2MouseEntered(evt);
+                btnRegistrarInstitucionMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton2MouseExited(evt);
+                btnRegistrarInstitucionMouseExited(evt);
             }
         });
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, -1, -1));
+        jPanel2.add(btnRegistrarInstitucion, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(255, 0, 51,0));
-        jButton3.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Registrar Donaciones");
-        jButton3.setBorderPainted(false);
-        jButton3.setContentAreaFilled(false);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnRegistrarDonaciones.setBackground(new java.awt.Color(255, 0, 51,0));
+        btnRegistrarDonaciones.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
+        btnRegistrarDonaciones.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegistrarDonaciones.setText("Registrar Donaciones");
+        btnRegistrarDonaciones.setBorderPainted(false);
+        btnRegistrarDonaciones.setContentAreaFilled(false);
+        btnRegistrarDonaciones.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnRegistrarDonaciones.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnRegistrarDonacionesMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton3MouseEntered(evt);
+                btnRegistrarDonacionesMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton3MouseExited(evt);
+                btnRegistrarDonacionesMouseExited(evt);
             }
         });
-        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 30, -1, -1));
+        jPanel2.add(btnRegistrarDonaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 30, -1, -1));
 
         jButton4.setBackground(new java.awt.Color(255, 0, 51,0));
         jButton4.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
@@ -163,35 +168,35 @@ public class Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
+    private void btnRegistrarDonanteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistrarDonanteMouseEntered
         // TODO add your handling code here:
-        jButton1.setFont(new java.awt.Font("Bahnschrift", 1, 20));
-    }//GEN-LAST:event_jButton1MouseEntered
+        btnRegistrarDonante.setFont(new java.awt.Font("Bahnschrift", 1, 20));
+    }//GEN-LAST:event_btnRegistrarDonanteMouseEntered
 
-    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
+    private void btnRegistrarDonanteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistrarDonanteMouseExited
         // TODO add your handling code here:
-        jButton1.setFont(new java.awt.Font("Bahnschrift", 0, 18));
-    }//GEN-LAST:event_jButton1MouseExited
+        btnRegistrarDonante.setFont(new java.awt.Font("Bahnschrift", 0, 18));
+    }//GEN-LAST:event_btnRegistrarDonanteMouseExited
 
-    private void jButton2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseEntered
+    private void btnRegistrarInstitucionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistrarInstitucionMouseEntered
         // TODO add your handling code here:
-        jButton2.setFont(new java.awt.Font("Bahnschrift", 1, 20));
-    }//GEN-LAST:event_jButton2MouseEntered
+        btnRegistrarInstitucion.setFont(new java.awt.Font("Bahnschrift", 1, 20));
+    }//GEN-LAST:event_btnRegistrarInstitucionMouseEntered
 
-    private void jButton2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseExited
+    private void btnRegistrarInstitucionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistrarInstitucionMouseExited
         // TODO add your handling code here:
-        jButton2.setFont(new java.awt.Font("Bahnschrift", 0, 18));
-    }//GEN-LAST:event_jButton2MouseExited
+        btnRegistrarInstitucion.setFont(new java.awt.Font("Bahnschrift", 0, 18));
+    }//GEN-LAST:event_btnRegistrarInstitucionMouseExited
 
-    private void jButton3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseEntered
+    private void btnRegistrarDonacionesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistrarDonacionesMouseEntered
         // TODO add your handling code here:
-        jButton3.setFont(new java.awt.Font("Bahnschrift", 1, 20));
-    }//GEN-LAST:event_jButton3MouseEntered
+        btnRegistrarDonaciones.setFont(new java.awt.Font("Bahnschrift", 1, 20));
+    }//GEN-LAST:event_btnRegistrarDonacionesMouseEntered
 
-    private void jButton3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseExited
+    private void btnRegistrarDonacionesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistrarDonacionesMouseExited
         // TODO add your handling code here:
-        jButton3.setFont(new java.awt.Font("Bahnschrift", 0, 18));
-    }//GEN-LAST:event_jButton3MouseExited
+        btnRegistrarDonaciones.setFont(new java.awt.Font("Bahnschrift", 0, 18));
+    }//GEN-LAST:event_btnRegistrarDonacionesMouseExited
 
     private void jButton4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseEntered
         // TODO add your handling code here:
@@ -203,10 +208,10 @@ public class Principal extends javax.swing.JFrame {
         jButton4.setFont(new java.awt.Font("Bahnschrift", 0, 18));
     }//GEN-LAST:event_jButton4MouseExited
 
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+    private void btnRegistrarDonanteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistrarDonanteMouseClicked
         // TODO add your handling code here:
         this.jPanel2.setVisible(false);
-        if (jPanelX == null) {
+        
             jPanelX = new RegistroDonante(jPanel2);
             javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
             getContentPane().setLayout(layout);
@@ -218,30 +223,44 @@ public class Principal extends javax.swing.JFrame {
                     layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanelX, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE)
             );
-        } else {
-            this.jPanelX.setVisible(!jPanelX.isVisible());
-        }
-    }//GEN-LAST:event_jButton1MouseClicked
+    }//GEN-LAST:event_btnRegistrarDonanteMouseClicked
 
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+    private void btnRegistrarInstitucionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistrarInstitucionMouseClicked
         // TODO add your handling code here:
         this.jPanel2.setVisible(false);
-        if (jPanelX == null) {
-            jPanelX = new RegistroDonante(jPanel2);
-            javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-            getContentPane().setLayout(layout);
-            layout.setHorizontalGroup(
-                    layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanelX, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            );
-            layout.setVerticalGroup(
-                    layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanelX, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE)
-            );
-        } else {
-            this.jPanelX.setVisible(!jPanelX.isVisible());
-        }
-    }//GEN-LAST:event_jButton2MouseClicked
+        jPanelX = new RegistroInstitucion(jPanel2);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jPanelX, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jPanelX, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE)
+        );
+
+    }//GEN-LAST:event_btnRegistrarInstitucionMouseClicked
+
+    private void btnRegistrarDonacionesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistrarDonacionesMouseClicked
+        // TODO add your handling code here:
+        this.jPanel2.setVisible(false);
+        jPanelX = new RegistroDonacion1(jPanel2);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jPanelX, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jPanelX, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE)
+        );
+    }//GEN-LAST:event_btnRegistrarDonacionesMouseClicked
+
+    public void quitaPanel(JPanel miPanel) {
+        this.remove(miPanel);
+    }
 
     /**
      * @param args the command line arguments
@@ -279,9 +298,9 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton btnRegistrarDonaciones;
+    private javax.swing.JButton btnRegistrarDonante;
+    private javax.swing.JButton btnRegistrarInstitucion;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

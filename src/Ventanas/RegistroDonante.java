@@ -178,6 +178,7 @@ public class RegistroDonante extends javax.swing.JPanel {
         // TODO add your handling code here:
         this.setVisible(false);
         refHome.setVisible(true);
+        refHome.remove(this);
     }//GEN-LAST:event_btnHomeMouseClicked
 
     private void btnRegistrarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistrarMouseExited

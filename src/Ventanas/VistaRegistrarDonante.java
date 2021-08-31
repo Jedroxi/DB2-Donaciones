@@ -5,6 +5,7 @@
  */
 package Ventanas;
 
+import Controladores.ControladorDonantes;
 import Controladores.SQLClass;
 import java.text.SimpleDateFormat;
 import java.util.Timer;
@@ -202,7 +203,7 @@ public class VistaRegistrarDonante extends javax.swing.JPanel {
         
         if (!nombre.equals("") && !apellido.equals("") && !correo.equals("") && dni > 0 && campoFecha.getDate()!=null) {
             String fecha = dateFormat.format(campoFecha.getDate());
-            String msj = SQLClass.agregarDonante(nombre, apellido, correo, fecha, dni);
+            String msj = ControladorDonantes.agregarDonante(nombre, apellido, correo, fecha, dni);
             if (!msj.equals("")) {
                 JOptionPane.showMessageDialog(this, msj, "Error", JOptionPane.WARNING_MESSAGE);
             } else {

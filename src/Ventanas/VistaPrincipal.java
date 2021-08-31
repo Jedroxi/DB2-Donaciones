@@ -7,7 +7,6 @@ package Ventanas;
 
 
 import Controladores.SQLClass;
-import javax.swing.JPanel;
 
 /**
  *
@@ -261,9 +260,6 @@ public class VistaPrincipal extends javax.swing.JFrame {
         );
     }//GEN-LAST:event_btnRegistrarDonacionesMouseClicked
 
-    public void quitaPanel(JPanel miPanel) {
-        this.remove(miPanel);
-    }
 
     /**
      * @param args the command line arguments

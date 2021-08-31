@@ -3,16 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/proyecto/base/de/datos2/ProyectoBaseDeDatos2.java</file>
+            <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Modelos/Producto.java</file>
+            <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Modelos/Categoria.java</file>
+            <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Modelos/Institucion.java</file>
             <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Ventanas/PlantillaProducto.java</file>
             <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Controladores/ControladorInstituciones.java</file>
-            <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Imagenes/Donaciones/fondoEliminar.png</file>
-            <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Ventanas/VistaPrincipal.java</file>
-            <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Ventanas/VistaRegistrarInstitucion.java</file>
+            <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Controladores/ControladorProductos.java</file>
+            <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Controladores/ControladorDetalleDonacion.java</file>
             <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Controladores/SQLClass.java</file>
             <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Ventanas/VistaRegistrarDonacion.java</file>
             <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Controladores/ControladorCategorias.java</file>
+            <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/proyecto/base/de/datos2/ProyectoBaseDeDatos2.java</file>
+            <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Controladores/ControladorDonaciones.java</file>
+            <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Ventanas/VistaPrincipal.java</file>
+            <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Ventanas/VistaRegistrarInstitucion.java</file>
             <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Ventanas/VistaRegistrarDonante.java</file>
+            <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Modelos/Donante.java</file>
             <file>file:/C:/Users/crixa/Documents/NetBeansProjects/Proyecto%20Base%20de%20Datos2/src/Controladores/ControladorDonantes.java</file>
         </group>
     </open-files>

@@ -55,8 +55,8 @@ public class ProyectoBaseDeDatos2 {
             System.out.println(error);
         }*/
        //Producto(String nombre,String descripcion,int cantidad,int idCategoria)
-       SQLClass.iniciarConexion();
-       ControladorProductos.agregarProducto(new Producto("Carro","Un carro",2,2));
+       /*SQLClass.iniciarConexion();
+       ControladorProductos.agregarProducto(new Producto("Carro","Un carro",2,2));*/
     }
     
 }

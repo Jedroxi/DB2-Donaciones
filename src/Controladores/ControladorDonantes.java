@@ -53,4 +53,20 @@ public class ControladorDonantes {
     public static int dameIdDonante(int indice) {
         return donantes.get(indice).id;
     }
+    
+    public static String agregarDonante(String nombre,String apellido,String correo,String fechaNacimiento,int dni){
+        try{
+            CallableStatement cs = SQLClass.obtenerConexion().prepareCall("{call agregarDonante(?,?,?,?,?)}");
+            cs.setString(1,nombre);
+            cs.setString(2,apellido);
+            cs.setString(3,correo);
+            cs.setString(4,fechaNacimiento);
+            cs.setInt(5, dni);
+            cs.execute();
+            
+            return "";
+        }catch(Exception e){
+            return "SQLClass-agregarDonante: La excepcion lanzada es: "+e;
+        }
+    }
 }
